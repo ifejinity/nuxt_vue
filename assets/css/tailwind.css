@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50;
+}
+
+@layer components {
+    .btn {
+        @apply bg-blue-500 text-white px-3 py-2 rounded-md text-sm text-white;
+    }
+    .cards {
+        @apply w-full max-w-[300px] shadow-sm p-4 bg-white justify-between flex flex-col gap-3 rounded-md relative;
+    }
+}
