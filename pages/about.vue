@@ -7,7 +7,9 @@
 </template>
 
 <script setup>
-
+    useHead({
+        title: 'Shop | About'
+    })
 </script>
 
 <style scoped>

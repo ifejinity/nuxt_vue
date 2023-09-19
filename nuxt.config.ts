@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxt/image'
+    '@nuxt/image',
+    
   ],
   image: {
     inject: true,
@@ -18,5 +19,16 @@ export default defineNuxtConfig({
       'xxl': 1536,
       '2xl': 1536
     },
+  },
+  app: {
+    head: {
+      title: 'Shop',
+      meta: [
+        {name: 'description', content: 'Everything about shop'}
+      ],
+      link: [
+        {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css'}
+      ]
+    }
   }
 })

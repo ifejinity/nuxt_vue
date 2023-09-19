@@ -2,7 +2,7 @@
     <div>
         <h1>{{ product.title }}</h1>
         <NuxtImg :src="product.image" alt="" srcset="" class="thumb"/>
-        <NuxtLink :to="`/products/${product.id}`" class="text-white bg-blue-500 absolute bottom-3 right-3 btn">View details</NuxtLink>
+        <NuxtLink :to="`/products/${product.id}`" class="absolute bottom-3 right-3 btn bg-blue-500 hover:bg-blue-400 text-white"><i class="bi bi-box-arrow-up-right"></i>View details</NuxtLink>
     </div>
 </template>
 
