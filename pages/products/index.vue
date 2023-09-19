@@ -14,7 +14,7 @@
     })
 
     // fetch products
-    const {data: products} = await useFetch('https://fakestoreapi.com/products')
+    const {data: products} = await useFetch('/api/product')
     
     useHead ({
         title: 'Shop | Product'
